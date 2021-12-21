@@ -227,8 +227,8 @@ export default class ShowAllWarehouses extends React.Component {
             </button>
           </div>
           <div>
-            <span className="filterLabel">Sort by:</span>
-            <select onChange={this.changeSort} className="filterSelect">
+            <span className="sortLabel">Sort by:</span>
+            <select onChange={this.changeSort} className="sortSelect">
               <option selected value="asc">
                 Ascending
               </option>

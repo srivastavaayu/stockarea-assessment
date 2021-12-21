@@ -32,6 +32,15 @@
   font-family: inherit;
 }
 
+.sortLabel {
+  margin-right: 5px;
+}
+
+.sortSelect {
+  padding: 1vh;
+  font-family: inherit;
+}
+
 .allWarehousesFilter button {
   padding: 1vh;
   font-family: inherit;
