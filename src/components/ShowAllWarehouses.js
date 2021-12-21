@@ -208,6 +208,16 @@ export default class ShowAllWarehouses extends React.Component {
                     filterByLiveStatus: "",
                   },
                   () => {
+                    for (
+                      let i = 0;
+                      i <
+                      document.getElementsByClassName("filterSelect").length;
+                      i++
+                    ) {
+                      document.getElementsByClassName("filterSelect")[
+                        i
+                      ].selectedIndex = 0;
+                    }
                     this.changeFilter(event);
                   }
                 );
