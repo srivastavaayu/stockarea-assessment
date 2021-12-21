@@ -35,20 +35,20 @@ export default class ShowAllWarehouses extends React.Component {
 
   changeSort() {
     if (this.state.sortBy === "asc") {
-      this.setState(() => ({
+      this.setState((prevState) => ({
         ...this.state,
         sortBy: "desc",
-        warehouses: this.props.warehousesData.sort((a, b) => {
+        warehouses: prevState.warehouses.sort((a, b) => {
           return (
             parseInt(b.code.split("-")[1]) - parseInt(a.code.split("-")[1])
           );
         }),
       }));
     } else {
-      this.setState(() => ({
+      this.setState((prevState) => ({
         ...this.state,
         sortBy: "asc",
-        warehouses: this.props.warehousesData.sort((a, b) => {
+        warehouses: prevState.warehouses.sort((a, b) => {
           return (
             parseInt(a.code.split("-")[1]) - parseInt(b.code.split("-")[1])
           );
