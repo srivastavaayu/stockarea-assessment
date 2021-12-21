@@ -1,0 +1,91 @@
+.allWarehousesContainer {
+  margin: 1vh auto;
+  width: 80%;
+}
+
+.warehouseContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 1vw 1vw;
+}
+
+.allWarehousesHeading {
+  color: #1a374d;
+}
+
+.allWarehousesFilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterLabel {
+  margin-right: 5px;
+}
+
+.filterSelect {
+  padding: 1vh;
+  font-family: inherit;
+}
+
+.allWarehousesFilter button {
+  padding: 1vh;
+  font-family: inherit;
+}
+
+.warehouseName {
+  font-size: 1.4rem;
+}
+
+.warehouseCode {
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.warehouseCode::before {
+  content: "(";
+}
+
+.warehouseCode::after {
+  content: ")";
+}
+
+.warehouseData {
+  font-weight: 700;
+}
+
+.warehouseStatusData {
+  display: flex;
+  flex-direction: column;
+}
+
+.warehouseStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+  width: 10vw;
+  height: 4vw;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.warehouseRegistrationRegisteredStatus {
+  background-color: #39bd39;
+}
+
+.warehouseRegistrationNotRegisteredStatus {
+  background-color: #e84343;
+}
+
+.warehouseLiveLiveStatus {
+  background-color: #39bd39;
+}
+
+.warehouseLiveNotLiveStatus {
+  background-color: #e84343;
+}
