@@ -64,7 +64,6 @@ export default class ShowAllWarehouses extends React.Component {
         [event.target.name]: event.target.value,
       },
       () => {
-        console.log(this.state);
         this.setState(
           { ...this.state, warehouses: this.props.warehousesData },
           () => {
@@ -130,7 +129,6 @@ export default class ShowAllWarehouses extends React.Component {
           }
         );
 
-        console.log(this.state);
       }
     );
   }
@@ -138,7 +136,6 @@ export default class ShowAllWarehouses extends React.Component {
   render() {
     return (
       <div className="allWarehousesContainer">
-        {console.log(this.state)}
         <h2 className="allWarehousesHeading">Warehouses</h2>
         <hr />
         <div className="allWarehousesFilter">

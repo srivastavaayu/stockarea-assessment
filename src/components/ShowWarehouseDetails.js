@@ -48,7 +48,6 @@ export default function ShowAllWarehouses(props) {
     }
   };
 
-  console.log(warehouseData);
   return (
     <div className="showWarehouseDetailsContainer">
       <div className="showWarehouseDetailsHeader">

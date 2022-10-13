@@ -10,7 +10,6 @@ function App() {
     useState(warehousesData);
 
   const changeWarehouseDetails = (newData) => {
-    console.log(fetchedWarehousesData);
     let newWarehouseData = fetchedWarehousesData.filter(
       (node) => node.id !== newData.id
     );
